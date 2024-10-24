@@ -1,25 +1,44 @@
+
 *{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+    background-color: black;
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
+.body{
+    
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;3
+    background-color: rgba(0, 0, 0, 0.941);
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    color: rgb(245, 236, 236);
+}
+.box{
+    max-width: 600px;
 }
 
 h1{
-    color: cyan;
-    margin-bottom: 60px;
+    font-size: 5em;
+}
+p{
+    font-size: 1.2em;
 }
 iframe{
-    width: 90%;
-    height: 800px;
-    filter: invert(100%);
+    border-radius: 2em;
+    border: none;
+    width: 500px;
+    height: 500px;
+    transition: 0.3s ease-in-out;
+}
+iframe:hover{
+    transform: scale(1.1);
 }
